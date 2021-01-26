@@ -1,4 +1,4 @@
-# asynth
+# aSynth
 
 _Web application to play music together anywhere in the world using spotify api_
 
@@ -11,3 +11,9 @@ _Web application to play music together anywhere in the world using spotify api_
   - development server at http://127.0.0.1:8000/
 
 - `npm run dev` inside of /client directory
+
+
+Todos:
+- SPOTIFY API INTEGRATION
+- REDESIGN UI/UX
+
