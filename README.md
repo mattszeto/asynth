@@ -2,7 +2,7 @@
 
 _Web application to play music together anywhere in the world using spotify api_
 
-![music player](images\music_player.png?)
+![music player](https://github.com/mattszeto/asynth/blob/main/images/music_player.png?raw=true)
 
 #### cmds to remember:
 
