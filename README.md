@@ -2,6 +2,8 @@
 
 _Web application to play music together anywhere in the world using spotify api_
 
+![music player](images\music_player.png?raw=true "Music Player")
+
 #### cmds to remember:
 
 - `python .\manage.py makemigrations` (every time there are changes to database models, rerun migrations)
@@ -14,3 +16,6 @@ Todos:
 
 - [x] SPOTIFY API INTEGRATION
 - [ ] REDESIGN UI/UX
+- [ ] refactor to functional components
+- [ ] deploy application
+- [ ] create a social network architecture
