@@ -14,6 +14,15 @@ export default class MusicPlayer extends Component {
   constructor(props) {
     super(props);
   }
+
+  skipSong() {
+    const requestOptions = {
+      method: "POST",
+      headers: { "Content-Type": "applications/json" },
+    };
+    fetch("/spotify/skip", requestOptions);
+  }
+
   pauseSong() {
     const requestOptions = {
       method: "PUT",
@@ -45,18 +54,28 @@ export default class MusicPlayer extends Component {
             <Typography color="textSecondary" variant="subtitle1">
               {this.props.artist}
             </Typography>
-            <div>
+            <Grid item xs={0}>
               <IconButton
                 onClick={() => {
                   this.props.is_playing ? this.pauseSong() : this.playSong();
                 }}
               >
-                {this.props.is_playing ? <PauseIcon /> : <PlayArrowIcon />}
+                <Grid item align="center">
+                  {this.props.is_playing ? <PauseIcon /> : <PlayArrowIcon />}
+                  <Typography color="textSecondary" variant="subtitle1">
+                    Skips
+                  </Typography>
+                </Grid>
               </IconButton>
-              <IconButton>
-                <SkipNextIcon />
+              <IconButton onClick={() => this.skipSong()}>
+                <Grid item align="center">
+                  <SkipNextIcon />
+                  <Typography color="textSecondary" variant="subtitle1">
+                    {this.props.votes} / {this.props.votes_required}
+                  </Typography>
+                </Grid>
               </IconButton>
-            </div>
+            </Grid>
           </Grid>
         </Grid>
         <LinearProgress variant="determinate" value={songProgress} />

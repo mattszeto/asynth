@@ -7,13 +7,10 @@ _Web application to play music together anywhere in the world using spotify api_
 - `python .\manage.py makemigrations` (every time there are changes to database models, rerun migrations)
 - `python .\manage.py migrate` (same with this one)
 - `python .\manage.py runserver` (runs django server)
-
-  - development server at http://127.0.0.1:8000/
-
-- `npm run dev` inside of /client directory
-
+- `python .\manage.py runserver 0.0.0.0:8000` (runs on local server (anyone connected to same network can access))
+- `npm run dev` inside of /frontend directory
 
 Todos:
-- SPOTIFY API INTEGRATION
-- REDESIGN UI/UX
 
+- [x] SPOTIFY API INTEGRATION
+- [ ] REDESIGN UI/UX

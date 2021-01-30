@@ -10,7 +10,7 @@ import {
 import RoomJoinPage from "./RoomJoinPage";
 import CreateRoomPage from "./CreateRoomPage";
 import Room from "./Room";
-
+import Info from "./Info";
 export default class HomePage extends Component {
   constructor(props) {
     super(props);
@@ -38,6 +38,9 @@ export default class HomePage extends Component {
           <ButtonGroup disableElevation variant="contained" color="primary">
             <Button color="primary" to="/join" component={Link}>
               Join Room
+            </Button>
+            <Button color="default" to="/info" component={Link}>
+              Info
             </Button>
             <Button color="secondary" to="/create" component={Link}>
               Create Room
@@ -70,6 +73,7 @@ export default class HomePage extends Component {
             }}
           />
           <Route path="/join" component={RoomJoinPage}></Route>
+          <Route path="/info" component={Info}></Route>
           <Route path="/create" component={CreateRoomPage}></Route>
           <Route
             path="/room/:roomCode"
