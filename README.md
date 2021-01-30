@@ -2,7 +2,7 @@
 
 _Web application to play music together anywhere in the world using spotify api_
 
-![music player](images\music_player.png?raw=true "Music Player")
+![music player](images\music_player.png?)
 
 #### cmds to remember:
 
